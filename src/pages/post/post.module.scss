@@ -24,6 +24,7 @@
         display: flex;
         align-items: center;
         color: var(--Info);
+        margin-bottom: 1rem;
 
         li {
             font-size: 0.875rem;
@@ -34,6 +35,13 @@
                 margin-left: 1.5rem;
             }
         }
+    }
+
+    > span {
+        font-size: 0.875rem;
+        font-weight: 400;
+        font-style: italic;
+        color: var(--Info); 
     }
 
 }
@@ -50,5 +58,34 @@
         font-size: 1.125rem;
         line-height: 1.6;
         margin: 1.8rem 0;
+    }
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--Border);    
+
+    h3 {        
+        margin-bottom: 0.5rem;
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: var(--Heading)
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--Highlight);
+    }
+
+    div {
+        padding-top: 3rem;
+    }
+
+    div + div {
+        text-align: right;
     }
 }

@@ -1,5 +1,22 @@
 .container {
     max-width: 950px;
     margin: 4rem auto;
-    padding: 0 2rem;
+    padding: 0;
+}
+
+.preview {
+    display: flex;
+    width: 100%;
+    max-width: 950px;
+    height: 3.625rem;
+    margin-top: 5.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Heading);    
+    border-radius: 0.25rem;
+
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--Background);
+
 }
