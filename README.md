@@ -8,40 +8,34 @@ Nesse desafio devo criar do zero uma aplicação de um blog com Prismic CMS a pa
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
 
 <p align="center">
-  <img alt="dev.finances" src=".github/jobscalc.png" width="100%">
+  <img alt="dev.finances" src=".github/layout-spacetraveling.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML
-- CSS
-- JavaScript
-- NodeJS
-- EJS
-- Express
-- SQLite
+- HTML 
+- SCSS
+- TypeScript
+- Next.js
+- Prismic CMS
+- Utteranc
 
 ## 💻 Projeto
 
-O JobsCalc é uma aplicação de estimativa de cálculo para projetos freelancer, onde é possível cadastrar e excluir jobs (projetos), obtendo uma estimativa de custo de cada job. Além disso, é possível traçar o valor da hora da pessoa que estará usando o sistema 💰
+Neste desafio, realizei a criação de um blog do completo zero com Next.js. Utilizando o Headless CMS chamado Prismic para gerar documentos repetíveis (post) que vão retornar dados para a aplicação. Além disso, para implementar comentários, utilizei o Utteranc para adicionar essa feature ao projeto. 🔥
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/s4fytPFbDiSkv4GPSfKaLE/Jobs-Planning). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/hPc0WhHm0fUVIuErl8AeWs/Desafios-M%C3%B3dulo-3-ReactJS-(Copy)?node-id=7%3A33). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ---
 
-Feito com ♥ by Douglas Santiago :wave:
+Feito by Douglas Santiago :wave:
