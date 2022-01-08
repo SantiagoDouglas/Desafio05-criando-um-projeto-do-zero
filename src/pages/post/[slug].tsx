@@ -26,7 +26,7 @@ interface Post {
     };
     author: string;
     content: {
-      headling: string;
+      heading: string;
       body: {
         text: string;
       }[];
@@ -36,21 +36,21 @@ interface Post {
 
 interface PostProps {
   post: Post;
-  preview: boolean;
   navigation: {
     prevPost: {
       uid: string;
       data: {
         title: string;
-      }
+      };
     }[];
     nextPost: {
       uid: string;
       data: {
         title: string;
-      }
+      };
     }[];
-  }
+  };
+  preview: boolean;
 }
 
 export default function Post({ post, navigation, preview }: PostProps) {
@@ -69,7 +69,7 @@ export default function Post({ post, navigation, preview }: PostProps) {
   )
 
   const totalWords = post.data.content.reduce((total, contentItem) => {
-    total += contentItem.headling.split(' ').length;
+    total += contentItem.heading.split(' ').length;
 
     const words = contentItem.body.map(item => item.text.split(' ').length)
     
@@ -116,8 +116,8 @@ export default function Post({ post, navigation, preview }: PostProps) {
 
         {post.data.content.map(content => {
           return (
-            <article key={content.headling} className={styles.content}>
-              <h2>{content.headling}</h2>
+            <article key={content.heading} className={styles.content}>
+              <h2>{content.heading}</h2>
               <div 
                 className={styles.postContent}
                 dangerouslySetInnerHTML={{
@@ -148,8 +148,8 @@ export default function Post({ post, navigation, preview }: PostProps) {
                   <p>Próximo post</p>
                 </a>
               </Link>
-            </div>            
-          )}
+            </div>
+          )}          
         </section>
 
         <Comments />
@@ -196,22 +196,22 @@ export const getStaticProps: GetStaticProps = async ({
   const response = await prismic.getByUID('posts', String(slug), {});
 
   const prevPost = await prismic.query(
-    [Prismic.predicates.at('document.type', 'posts')],
+    [Prismic.Predicates.at('document.type', 'posts')],
     {
       pageSize: 1,
       after: response.id,
-      orderings: '[document.first_publication_date]'
+      orderings: '[document.first_publication_date]',
     }
-  )
+  );
 
   const nextPost = await prismic.query(
     [Prismic.Predicates.at('document.type', 'posts')],
     {
       pageSize: 1,
       after: response.id,
-      orderings: '[document.last_publication_date desc]'
+      orderings: '[document.last_publication_date desc]',
     }
-  )
+  );
 
   const post = {
     uid: response.uid,
@@ -226,7 +226,7 @@ export const getStaticProps: GetStaticProps = async ({
       },
       content: response.data.content.map(content => {
         return {
-          headling: content.headling,
+          heading: content.heading,
           body: [...content.body]
         }
       }),
@@ -241,6 +241,7 @@ export const getStaticProps: GetStaticProps = async ({
         nextPost: nextPost?.results,
       },
       preview,
-    }
+    },
+    revalidate: 1800,
   }
 };
