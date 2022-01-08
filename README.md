@@ -1,6 +1,3 @@
-# Desafio05-e-06-criando-um-projeto-do-zero
-Nesse desafio devo criar do zero uma aplicação de um blog com Prismic CMS a partir de um layout do Figma
-
 <h1 align="center">
   <img alt="JobsCalc" title="JobsCalc" src="https://imgur.com/cJWEbaF.png" width="220px" />
 </h1>
