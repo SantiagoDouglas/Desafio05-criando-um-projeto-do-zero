@@ -11,7 +11,7 @@
 <br>
 
 <p align="center">
-  <img alt="dev.finances" src=".github/layout-spacetraveling.jpg" width="100%">
+  <img alt="spacetraveling" src=".github/layout-spacetraveling.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
