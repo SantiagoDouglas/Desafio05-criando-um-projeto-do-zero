@@ -20,6 +20,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML 
 - SCSS
+- React
 - TypeScript
 - Next.js
 - Prismic CMS
