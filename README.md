@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="JobsCalc" title="JobsCalc" src="https://imgur.com/cJWEbaF.png" width="220px" />
+  <img alt="spacetraveling" title="JobsCalc" src="https://imgur.com/cJWEbaF.png" width="220px" />
 </h1>
 
 <p align="center">
