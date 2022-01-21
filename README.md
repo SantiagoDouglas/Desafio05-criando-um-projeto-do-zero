@@ -35,4 +35,4 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 ---
 
-Feito by Douglas Santiago :wave:
+Feito by Douglas Santiago :wave:🔥
